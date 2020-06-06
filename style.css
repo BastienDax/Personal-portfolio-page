@@ -1,0 +1,129 @@
+:root {
+    --color-white: #f7f7f7;
+    --color-black: #0a0a0af2;
+    --color-brown: #a52a2a;
+    --color-gray: #333;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#navbar {
+    overflow: hidden;
+    position: fixed;
+    background-color: var(--color-black);
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+.nav-link {
+    display: flex;
+    margin-right: 2rem;
+    list-style-type: none;
+}
+.nav-link a {
+    display: block;
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--color-white);
+}
+.nav-link a:hover {
+    color: var(--color-brown)
+}
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: var(--color-black);
+    font-weight: 900;
+}
+#welcome-section::before {
+    content: "";
+    background-image: url("https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-repeat: no-repeat;
+    background: cover;
+    background-size: 100%;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+#welcome-section h1 {
+    font-size: 45px;
+}
+#welcome-section p {
+    font-size: 30px;
+    font-style: italic;
+}
+#projects {
+    background-color: var(--color-brown);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    text-align: center;
+    padding: 100px 250px;
+}
+
+#projects h2 {
+    color: var(--color-gray);
+    padding-bottom: 20px;
+    font-size: 35px;
+}
+hr {
+    border: 1px solid var(--color-gray);
+    margin-bottom: 50px;
+}
+img {
+    height: 450px;
+}
+.project-title {
+    padding: 20px;
+    color: var(--color-black);
+}
+
+.contact-section {
+    height: auto;
+    width: 100%;
+    padding: 50px 15px 15px 15px;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--color-gray);
+}
+.contact-section a {
+    padding: 20px;
+    text-decoration: none;
+}
+.contact-section svg:hover {
+    transform: scale(1.2);
+}
+.white-svg-link {
+    color: var(--color-white);
+}
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color-gray);
+    text-align: center;
+    color: var(--color-white);
+    max-width: 100%;
+    text-align: center;
+    overflow:auto;
+}
+footer a{
+    color: var(--color-white);
+}
+footer a:hover {
+    color: var(--color-gray);
+}
